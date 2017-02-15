@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS\style.css"/>
+    <script src="JS/calculator.js"></script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<div id="center">
+		<div id="inputField">0</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-success" onclick="memAddClear()">MRC</button>
+ 			<button type="button" class="btn btn-success" onclick="memPositive()">M+</button>
+ 			<button type="button" class="btn btn-success" onclick="memNegative()">M-</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('/')">/</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('7')">7</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('8')">8</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('9')">9</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('*')">*</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('4')">4</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('5')">5</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('6')">6</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('-')">-</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('1')">1</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('2')">2</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('3')">3</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('+')">+</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('0')">0</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('.')">.</button>
+ 			<button type="button" class="btn btn-default" onclick="clearAll()">C</button>
+ 			<button type="button" class="btn btn-warning" onclick="calculate()">=</button>
+		</div>
+	</div>
+</body>
+</html>

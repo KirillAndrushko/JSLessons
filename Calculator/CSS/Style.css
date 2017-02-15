@@ -1,0 +1,44 @@
+body 
+{
+	background-color: #009999; 
+}
+
+h1 
+{
+	text-align: center;
+}
+
+#center 
+{
+	background-color: #993333; 
+	margin: auto; 
+	height: 420px; 
+	width: 320px;
+	border:2px solid white;
+	border-radius:20px;
+}
+
+#inputField
+{	
+	text-align: right;
+	font-size: 20px;
+	height: 70px;	
+	background-color: white;
+	border: 5px gray solid;
+	margin: 20px;
+	border-radius:10px;
+	overflow: hidden;
+}
+
+button
+{
+	margin: 5px;
+	width: 55px;
+	height: 35px;
+	text-align: center;
+}
+
+.Line
+{
+	margin: 20px;	
+}
