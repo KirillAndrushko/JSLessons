@@ -75,7 +75,7 @@ function calculate()
 {
 	var input = document.getElementById("inputField");
 
-	if(firstDidit!=0 &&secondDigit!=0 && operation!="" )
+	if(firstDidit!=0 && operation!="" )
 	{
 		input.innerHTML += strignNum;
 	
@@ -116,14 +116,15 @@ function operations()
 function memAddClear()
 {
 	var input = document.getElementById("inputField");
-
-	if(input.innerHTML == "0")
+	if(mrc != 0)
 	{
-		input.innerHTML = "";
-		
+		if(input.innerHTML == "0")
+		{
+			input.innerHTML = "";		
+		}
+		input.innerHTML += mrc;
+		strignNum = mrc;
 	}
-	input.innerHTML += mrc;
-	strignNum = mrc;
 }
 
 function memPositive()
