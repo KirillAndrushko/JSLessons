@@ -13,7 +13,7 @@ function inputNumbers(number)
 
 	if(result!=0.0)
 	{
-		if(number == '.')
+		if(number == ".")
 		{
 			strignNum = result;
 		}
@@ -28,11 +28,11 @@ function inputNumbers(number)
 
 	if(input.innerHTML == "0" && number == "0")
 	{
-		 input.innerHTML = "0";
+		input.innerHTML = "0";
 	} 
 	else if(input.innerHTML == "0" && number!=".")
 	{
-    	input.innerHTML = "";
+		input.innerHTML = "";
 		input.innerHTML += number.toString();
 	}
 	else 
@@ -50,9 +50,9 @@ function inputSymbol(symbol)
 		result = 0;
 	}
 
- 	var input = document.getElementById("inputField");
+	var input = document.getElementById("inputField");
 
- 	input.innerHTML += symbol;
+	input.innerHTML += symbol;
 	
 	if(firstDidit == 0 && operation == "")
 	{		
@@ -74,17 +74,20 @@ function inputSymbol(symbol)
 function calculate()
 {
 	var input = document.getElementById("inputField");
-	
- 	input.innerHTML += strignNum;
-	console.log(strignNum);
-	secondDigit = parseFloat(strignNum);	
-	result = operations();	
-	input.innerHTML = result;
 
-	strignNum = "0";
-	firstDidit = 0;
-	secondDigit = 0;
-	operation = "";
+	if(firstDidit!=0 &&secondDigit!=0 && operation!="" )
+	{
+		input.innerHTML += strignNum;
+	
+		secondDigit = parseFloat(strignNum);	
+		result = operations();	
+		input.innerHTML = result;
+
+		strignNum = "0";
+		firstDidit = 0;
+		secondDigit = 0;
+		operation = "";
+	}
 }
 
 
@@ -92,19 +95,19 @@ function operations()
 {
 	var input = document.getElementById("inputField");
 
-	if(operation == '+')
+	if(operation == "+")
 	{
 		return  firstDidit + secondDigit;
 	}	
-	else if(operation == '-')
+	else if(operation == "-")
 	{
 		return firstDidit - secondDigit;
 	}	
-	else if(operation == '*')
+	else if(operation == "*")
 	{
 		return firstDidit * secondDigit;
 	}	
-	else if(operation == '/')
+	else if(operation == "/")
 	{
 		return firstDidit / secondDigit;
 	}	
