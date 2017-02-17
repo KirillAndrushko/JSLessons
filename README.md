@@ -1,3 +1,3 @@
 Calculator
 =======
-[See here](https://kirillandrushko.github.io/JSLessons)
+Demo version [See here](https://kirillandrushko.github.io/JSLessons)
