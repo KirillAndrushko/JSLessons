@@ -1,2 +1,46 @@
-<h1>Hello</h1>
-<a href="calculator/Calculator.html"> Calculator </a>
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" href="styles/bootstrap.min.css"/>
+	<link rel="stylesheet" href="styles/style.css"/>
+	<script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>   
+    <script src="scripts/calculator.js"></script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<div id="center">
+		<div id="inputField">0</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-success" onclick="memAddClear()">MRC</button>
+ 			<button type="button" class="btn btn-success" onclick="memPositive()">M+</button>
+ 			<button type="button" class="btn btn-success" onclick="memNegative()">M-</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('/')">/</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('7')">7</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('8')">8</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('9')">9</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('*')">*</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('4')">4</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('5')">5</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('6')">6</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('-')">-</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('1')">1</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('2')">2</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('3')">3</button>
+ 			<button type="button" class="btn btn-primary" onclick="inputSymbol('+')">+</button>
+		</div>
+		<div class="Line">
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('0')">0</button>
+ 			<button type="button" class="btn btn-default" onclick="inputNumbers('.')">.</button>
+ 			<button type="button" class="btn btn-default" onclick="clearAll()">C</button>
+ 			<button type="button" class="btn btn-warning" onclick="calculate()">=</button>
+		</div>
+	</div>
+</body>
+</html>
